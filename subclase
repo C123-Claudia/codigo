@@ -1,0 +1,7 @@
+class Depor.(Persona):
+    def _init_(self, nombre, edad, deporte):
+        super()._init_(nombre, edad)
+        self.deporte = deporte
+
+    def obtener_informacion_personal(self):
+        return f"{super().obtener_informacion_personal()}, Deporte: {self.deporte}"
